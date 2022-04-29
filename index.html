@@ -1,0 +1,481 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me of the Screen Infograph</title>
+
+    <meta content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+      $(function() {
+	$("#visible").click(function() {
+	    $('#invisible').toggleClass("show");
+	  });  
+	});
+    </script>
+    <style>
+        *{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body { min-height: 200vh; }
+
+.img1{
+  height: 500px;
+  width: 800px;
+  top: -40px;
+  position: relative;
+}
+.img2{
+  height: 500px;
+  width: 900px;
+  top: -24px;
+  left: 0px;
+  position: relative;
+}
+.img3{
+  height: 500px;
+  width: 800px;
+  top: -24px;
+  left: 0px;
+  position: relative;
+}
+
+
+    h1{
+    font-family:sans-serif;
+    color: #BCFF63;
+    font-weight: 200;
+    font-size: 50px;
+    }
+
+  .p1{
+    width: 84%;
+    position: relative;
+    left: -19px;
+    font: 100;
+    font-family:sans-serif;
+    color: #FFFFC7;
+    font-size:medium;
+  }
+
+/* CLOCK HERE  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+.clock {
+  height: 100px;
+    width: 100px;
+    background: #FFFF6F;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 7px solid #a7ec4b;
+    position: absolute;
+    z-index: 11;
+    top: -681px;
+    left: 1100px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: scale1 30s linear;
+    animation-iteration-count: 2;
+    animation-delay: 9s;
+    animation-direction: alternate;
+
+
+
+}
+
+  .second {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    margin: 0 auto;
+    animation: time 15s infinite linear;
+  
+    
+
+  }
+    .second:before {
+      position: absolute;
+      content: "";
+      background: #ff0059;
+      height: 35px;
+      width: 3px;
+      top: 45px;
+      border-radius: 10%;
+
+}
+
+@keyframes time {
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes scale1 {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(6.0);
+      left: 800px;
+      top: -422px;
+        }
+}
+
+/* CLOCK ENDSSSSS  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+    .h2-1{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: #D8FF63;
+    font-weight: 200;
+    position: relative;
+    top: 40px;
+    left: -20px;
+    font-size: 27px;
+
+    }
+
+    .h2-2{
+    font-family: sans-serif;
+    color: #D8FF63;
+    font-weight: 200;
+    position: relative;
+    top: -27px;
+    left: 92%;
+    font-size: 27px;
+
+    }
+
+    .square{
+      width: 97%;
+    height: 1px;
+    position: relative;
+    top: 20px;
+    background: #FFFF6F;
+    }
+    
+        .button {
+          border: none;
+          color: white;
+          width: 25px;
+    height: 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+          border-radius: 50%;
+        }
+        
+        .button1 {
+          background-color: #F20050; 
+          color: black; 
+          border: 2px solid #FFFFC7;
+          position: relative;
+          top: -9px;
+          left: 15px;
+        }
+        
+        .button1:hover {
+          background-color: #FFFFC7;
+          border: 2px solid #FFFFC7;
+
+        }
+        
+        .button2 {
+          background-color: #F20050; 
+          color: black; 
+          border: 2px solid #FFFFC7;
+          position: relative;
+          top: 10px;
+        left: 15px;
+        }
+        
+        .button2:hover {
+          background-color: #FFFFC7;
+          border: 2px solid #FFFFC7;
+
+        }
+
+
+        .button3 {
+          background-color: #F20050; 
+          color: black; 
+          border: 2px solid #FFFFC7;
+          position: relative;
+          top: 10px;
+        left: 15px;
+        }
+        
+        .button3:hover {
+          background-color: #FFFFC7;
+          border: 2px solid #FFFFC7;
+
+        }
+        .hide{display:none;}
+      .show{display:block;}
+
+      
+
+/* REMINDER 1 */
+      .visible1{
+        position: relative;
+    font-family:sans-serif;
+    color: #FFFFC7;
+    font-size:22px;
+    width: 90%;
+    top: -57px;
+    left: 13px;
+    height:100px;
+
+      }
+
+      .hidden1{
+        position: relative;
+        top: -105px;
+        left: 13px;
+        font: 100;
+    font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:17px;
+    width: 90%;
+      }
+
+      .square2{
+        width: 97%;
+    height: 1px;
+    position: relative;
+    background: #FFFF6F;
+    }
+
+    .hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:15px;
+    position: relative;
+
+}
+
+
+/* REMINDER 2 */
+.hide2 {
+  display: none;
+}
+    
+.myDIV2:hover + .hide2 {
+  display: block;
+  font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:15px;
+    position: relative;
+
+}
+.visible2{
+        position: relative;
+    font-family:sans-serif;
+    color: #FFFFC7;
+    font-size:22px;
+    width: 90%;
+    top: -37px;
+    left: 13px;
+    height:100px;
+
+
+      }
+
+      .hidden2{
+        position: relative;
+        top: -84px;
+        left: 13px;
+        font: 100;
+    font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:17px;
+    width: 90%;
+      }
+
+      .square3{
+        width: 97%;
+    height: 1px;
+    position: relative;
+    background: #FFFF6F;
+    }
+
+/* REMINDER 3 */
+.hide3 {
+  display: none;
+}
+    
+.myDIV3:hover + .hide3 {
+  display: block;
+  font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:15px;
+    position: relative;
+
+}
+.visible3{
+    position: relative;
+    font-family:sans-serif;
+    color: #FFFFC7;
+    font-size:22px;
+    width: 90%;
+    top: -37px;
+    left: 13px;
+    height:100px;
+
+    }
+
+    .hidden3{
+    position: relative;
+    top: -84px;
+    left: 13px;
+    font: 100;
+    font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:17px;
+    width: 90%;
+      }
+    
+      .square4{
+        width: 97%;
+    height: 1px;
+    position: relative;
+    background: #FFFF6F;
+    }
+
+/* REMINDER 3 */
+.hide4 {
+  display: none;
+}
+    
+.myDIV4:hover + .hide4 {
+  display: block;
+  font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:15px;
+    position: relative;
+
+}
+.visible4{
+    position: relative;
+    font-family:sans-serif;
+    color: #FFFFC7;
+    font-size:22px;
+    width: 90%;
+    top: -37px;
+    left: 13px;
+	height:100px;
+
+    }
+
+    .hidden4{
+    position: relative;
+    top: -84px;
+    left: 13px;
+    font: 100;
+    font-family:sans-serif;
+    color: #FFFF6F;
+    font-size:17px;
+    width: 90%;
+      }
+  
+
+</style>
+
+</head>
+
+<body style="background-color:#F20050;">
+       
+<h1>Me of the Screen Infographic: Reminders App</h1>
+<div class="p1"><p>This is an infographic about my use of the Reminders app on my phone. It was created for Graphic Design 2 for the "Me of the Screen" assignment. Hover on each reminder below to reveal the data I collected over a few weeks about how the Reminders app impacts my daily life. If you click on the circular check boxes, alerts pop up!</p> </div>
+
+<article class="clock">
+  <div class="second"></div>
+  </div>
+</article>
+
+<script>
+function button1ClickAlert() {
+  alert("Took you long enough...");
+}
+
+function button2ClickAlert() {
+  alert("Yay! You completed the task!");
+}
+
+function button3ClickAlert() {
+  alert("Good work!");
+}
+
+function button4ClickAlert() {
+  alert("Yikes, should have checked that off sooner!");
+}
+
+setTimeout(function(){
+ 	alert("Welcome! Hurry to check off these tasks!"); 
+}, 2000);
+setTimeout(function(){
+ 	alert("FASTER! You don't have a lot of time!"); 
+}, 16000);
+setTimeout(function(){
+ 	alert("Good work!"); 
+}, 38000);
+setTimeout(function(){
+ 	alert("Keep working! There is still more to do!"); 
+}, 90000);
+setTimeout(function(){
+ 	alert("You haven't finished yet?"); 
+}, 150000);
+</script>
+
+<div class="square"></div>
+
+<div class="h2-1"><h2>Reminders</h2></div>
+<div class="h2-2"><h2>4</h2></div>
+
+
+<button class="button button1" onclick="button1ClickAlert()"> </button>
+<div class="myDIV"> <p class="visible1">Average reminders set per day:</p> </div>
+<div class="hide"> <p class="hidden1">Over the few weeks I studied my reminder-setting patterns, I discovered I set an average of<u>2</u>reminders a day. I calculated this by writing a daily log of the reminders I set, then at the end seeing what the daily average was. Some days I set only 1 reminder and a few days I set over 4, but it was usually about 1. </p> <img src="img/Screen Shot 2022-04-28 at 5.14.52 PM.png" class="img1"></div>
+
+<div class="square2"></div>
+
+<button class="button button2" onclick="button2ClickAlert()"> </button>
+  <div class="myDIV2"> <p class="visible2">Reminders effect on productivity:</p> </div>
+  <div class="hide2"><p class="hidden2"> I was noticeably less productive when no reminders were set, though I used work-arounds like other planners (none that reminded me of when to do things, just outlining things that needed to be done). Even with a planner it was hard to stay on track as I find the reminders app helps me most with spreading my tasks throughout the day with specific times. It also has a “punishment/reward” system which is just that it feels good to check things off and bad to see them sitting there in red.  </p></div>
+
+<div class="square3"></div>
+
+<button class="button button2" onclick="button3ClickAlert()"> </button>
+  <div class="myDIV3"> <p class="visible3">What most reminders were regarding:</p> </div>
+  <div class="hide3"><p class="hidden3"> Most (60%) of reminders were about school, the rest were smaller personal reminders of things I want to make sure I remember to do on time or tasks I think I might forget about.  </p><img src="img/Screen Shot 2022-04-28 at 7.00.18 PM.png" class="img2"></div>
+
+  <div class="square4"></div>
+
+  <button class="button button2" onclick="button4ClickAlert()"> </button>
+  <div class="myDIV4"> <p class="visible4">How long it took me to complete reminders:</p> </div>
+  <div class="hide4"><p class="hidden4"> It usually takes 1 hour to a few days to check off a reminder and the significant motivation behind completing the task is the reminder constantly on my screen in red telling me it is late. The average time to complete a reminder is about a few hours. Sometimes I adjust reminders to go off again later if I realise I won’t be able to complete it right away but it isn’t urgent, but I still want to remember to do it later. Primary motivation to change it rather than just leaving it is that it feels stressful to leave the notification there, looming over me.</p><img src="img/Screen Shot 2022-04-28 at 7.12.17 PM.png" class="img3"></div>
+
+
+ 
+</body>
+</html>
